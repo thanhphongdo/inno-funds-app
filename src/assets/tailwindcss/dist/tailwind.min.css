@@ -2699,45 +2699,6 @@
   -webkit-overflow-scrolling: auto !important
 }
 
-.tw-overscroll-auto {
-  -ms-scroll-chaining: chained !important;
-      overscroll-behavior: auto !important
-}
-
-.tw-overscroll-contain {
-  -ms-scroll-chaining: none !important;
-      overscroll-behavior: contain !important
-}
-
-.tw-overscroll-none {
-  -ms-scroll-chaining: none !important;
-      overscroll-behavior: none !important
-}
-
-.tw-overscroll-y-auto {
-  overscroll-behavior-y: auto !important
-}
-
-.tw-overscroll-y-contain {
-  overscroll-behavior-y: contain !important
-}
-
-.tw-overscroll-y-none {
-  overscroll-behavior-y: none !important
-}
-
-.tw-overscroll-x-auto {
-  overscroll-behavior-x: auto !important
-}
-
-.tw-overscroll-x-contain {
-  overscroll-behavior-x: contain !important
-}
-
-.tw-overscroll-x-none {
-  overscroll-behavior-x: none !important
-}
-
 .tw-p-0 {
   padding: 0 !important
 }
@@ -3467,15 +3428,11 @@
 }
 
 .tw-text-black {
-  --text-opacity: 1 !important;
-  color: #000 !important;
-  color: rgba(0, 0, 0, var(--text-opacity)) !important
+  color: #000 !important
 }
 
 .tw-text-white {
-  --text-opacity: 1 !important;
-  color: #fff !important;
-  color: rgba(255, 255, 255, var(--text-opacity)) !important
+  color: #fff !important
 }
 
 .hover-tw-text-transparent:hover {
@@ -3487,15 +3444,11 @@
 }
 
 .hover-tw-text-black:hover {
-  --text-opacity: 1 !important;
-  color: #000 !important;
-  color: rgba(0, 0, 0, var(--text-opacity)) !important
+  color: #000 !important
 }
 
 .hover-tw-text-white:hover {
-  --text-opacity: 1 !important;
-  color: #fff !important;
-  color: rgba(255, 255, 255, var(--text-opacity)) !important
+  color: #fff !important
 }
 
 .focus-tw-text-transparent:focus {
@@ -3507,75 +3460,11 @@
 }
 
 .focus-tw-text-black:focus {
-  --text-opacity: 1 !important;
-  color: #000 !important;
-  color: rgba(0, 0, 0, var(--text-opacity)) !important
+  color: #000 !important
 }
 
 .focus-tw-text-white:focus {
-  --text-opacity: 1 !important;
-  color: #fff !important;
-  color: rgba(255, 255, 255, var(--text-opacity)) !important
-}
-
-.tw-text-opacity-0 {
-  --text-opacity: 0 !important
-}
-
-.tw-text-opacity-25 {
-  --text-opacity: 0.25 !important
-}
-
-.tw-text-opacity-50 {
-  --text-opacity: 0.5 !important
-}
-
-.tw-text-opacity-75 {
-  --text-opacity: 0.75 !important
-}
-
-.tw-text-opacity-100 {
-  --text-opacity: 1 !important
-}
-
-.hover-tw-text-opacity-0:hover {
-  --text-opacity: 0 !important
-}
-
-.hover-tw-text-opacity-25:hover {
-  --text-opacity: 0.25 !important
-}
-
-.hover-tw-text-opacity-50:hover {
-  --text-opacity: 0.5 !important
-}
-
-.hover-tw-text-opacity-75:hover {
-  --text-opacity: 0.75 !important
-}
-
-.hover-tw-text-opacity-100:hover {
-  --text-opacity: 1 !important
-}
-
-.focus-tw-text-opacity-0:focus {
-  --text-opacity: 0 !important
-}
-
-.focus-tw-text-opacity-25:focus {
-  --text-opacity: 0.25 !important
-}
-
-.focus-tw-text-opacity-50:focus {
-  --text-opacity: 0.5 !important
-}
-
-.focus-tw-text-opacity-75:focus {
-  --text-opacity: 0.75 !important
-}
-
-.focus-tw-text-opacity-100:focus {
-  --text-opacity: 1 !important
+  color: #fff !important
 }
 
 .tw-italic {
@@ -3636,16 +3525,6 @@
 
 .focus-tw-no-underline:focus {
   text-decoration: none !important
-}
-
-.tw-antialiased {
-  -webkit-font-smoothing: antialiased !important;
-  -moz-osx-font-smoothing: grayscale !important
-}
-
-.tw-subpixel-antialiased {
-  -webkit-font-smoothing: auto !important;
-  -moz-osx-font-smoothing: auto !important
 }
 
 .tw-ordinal, .tw-slashed-zero, .tw-lining-nums, .tw-oldstyle-nums, .tw-proportional-nums, .tw-tabular-nums, .tw-diagonal-fractions, .tw-stacked-fractions {
@@ -6212,45 +6091,6 @@
     outline-offset: 2px !important
   }
 
-  .sm-tw-overscroll-auto {
-    -ms-scroll-chaining: chained !important;
-        overscroll-behavior: auto !important
-  }
-
-  .sm-tw-overscroll-contain {
-    -ms-scroll-chaining: none !important;
-        overscroll-behavior: contain !important
-  }
-
-  .sm-tw-overscroll-none {
-    -ms-scroll-chaining: none !important;
-        overscroll-behavior: none !important
-  }
-
-  .sm-tw-overscroll-y-auto {
-    overscroll-behavior-y: auto !important
-  }
-
-  .sm-tw-overscroll-y-contain {
-    overscroll-behavior-y: contain !important
-  }
-
-  .sm-tw-overscroll-y-none {
-    overscroll-behavior-y: none !important
-  }
-
-  .sm-tw-overscroll-x-auto {
-    overscroll-behavior-x: auto !important
-  }
-
-  .sm-tw-overscroll-x-contain {
-    overscroll-behavior-x: contain !important
-  }
-
-  .sm-tw-overscroll-x-none {
-    overscroll-behavior-x: none !important
-  }
-
   .sm-tw-p-0 {
     padding: 0 !important
   }
@@ -6920,15 +6760,11 @@
   }
 
   .sm-tw-text-black {
-    --text-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--text-opacity)) !important
+    color: #000 !important
   }
 
   .sm-tw-text-white {
-    --text-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--text-opacity)) !important
+    color: #fff !important
   }
 
   .sm-hover-tw-text-transparent:hover {
@@ -6940,15 +6776,11 @@
   }
 
   .sm-hover-tw-text-black:hover {
-    --text-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--text-opacity)) !important
+    color: #000 !important
   }
 
   .sm-hover-tw-text-white:hover {
-    --text-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--text-opacity)) !important
+    color: #fff !important
   }
 
   .sm-focus-tw-text-transparent:focus {
@@ -6960,75 +6792,11 @@
   }
 
   .sm-focus-tw-text-black:focus {
-    --text-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--text-opacity)) !important
+    color: #000 !important
   }
 
   .sm-focus-tw-text-white:focus {
-    --text-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--text-opacity)) !important
-  }
-
-  .sm-tw-text-opacity-0 {
-    --text-opacity: 0 !important
-  }
-
-  .sm-tw-text-opacity-25 {
-    --text-opacity: 0.25 !important
-  }
-
-  .sm-tw-text-opacity-50 {
-    --text-opacity: 0.5 !important
-  }
-
-  .sm-tw-text-opacity-75 {
-    --text-opacity: 0.75 !important
-  }
-
-  .sm-tw-text-opacity-100 {
-    --text-opacity: 1 !important
-  }
-
-  .sm-hover-tw-text-opacity-0:hover {
-    --text-opacity: 0 !important
-  }
-
-  .sm-hover-tw-text-opacity-25:hover {
-    --text-opacity: 0.25 !important
-  }
-
-  .sm-hover-tw-text-opacity-50:hover {
-    --text-opacity: 0.5 !important
-  }
-
-  .sm-hover-tw-text-opacity-75:hover {
-    --text-opacity: 0.75 !important
-  }
-
-  .sm-hover-tw-text-opacity-100:hover {
-    --text-opacity: 1 !important
-  }
-
-  .sm-focus-tw-text-opacity-0:focus {
-    --text-opacity: 0 !important
-  }
-
-  .sm-focus-tw-text-opacity-25:focus {
-    --text-opacity: 0.25 !important
-  }
-
-  .sm-focus-tw-text-opacity-50:focus {
-    --text-opacity: 0.5 !important
-  }
-
-  .sm-focus-tw-text-opacity-75:focus {
-    --text-opacity: 0.75 !important
-  }
-
-  .sm-focus-tw-text-opacity-100:focus {
-    --text-opacity: 1 !important
+    color: #fff !important
   }
 
   .sm-tw-italic {
@@ -7089,16 +6857,6 @@
 
   .sm-focus-tw-no-underline:focus {
     text-decoration: none !important
-  }
-
-  .sm-tw-antialiased {
-    -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: grayscale !important
-  }
-
-  .sm-tw-subpixel-antialiased {
-    -webkit-font-smoothing: auto !important;
-    -moz-osx-font-smoothing: auto !important
   }
 
   .sm-tw-ordinal, .sm-tw-slashed-zero, .sm-tw-lining-nums, .sm-tw-oldstyle-nums, .sm-tw-proportional-nums, .sm-tw-tabular-nums, .sm-tw-diagonal-fractions, .sm-tw-stacked-fractions {
@@ -9638,45 +9396,6 @@
     outline-offset: 2px !important
   }
 
-  .md-tw-overscroll-auto {
-    -ms-scroll-chaining: chained !important;
-        overscroll-behavior: auto !important
-  }
-
-  .md-tw-overscroll-contain {
-    -ms-scroll-chaining: none !important;
-        overscroll-behavior: contain !important
-  }
-
-  .md-tw-overscroll-none {
-    -ms-scroll-chaining: none !important;
-        overscroll-behavior: none !important
-  }
-
-  .md-tw-overscroll-y-auto {
-    overscroll-behavior-y: auto !important
-  }
-
-  .md-tw-overscroll-y-contain {
-    overscroll-behavior-y: contain !important
-  }
-
-  .md-tw-overscroll-y-none {
-    overscroll-behavior-y: none !important
-  }
-
-  .md-tw-overscroll-x-auto {
-    overscroll-behavior-x: auto !important
-  }
-
-  .md-tw-overscroll-x-contain {
-    overscroll-behavior-x: contain !important
-  }
-
-  .md-tw-overscroll-x-none {
-    overscroll-behavior-x: none !important
-  }
-
   .md-tw-p-0 {
     padding: 0 !important
   }
@@ -10346,15 +10065,11 @@
   }
 
   .md-tw-text-black {
-    --text-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--text-opacity)) !important
+    color: #000 !important
   }
 
   .md-tw-text-white {
-    --text-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--text-opacity)) !important
+    color: #fff !important
   }
 
   .md-hover-tw-text-transparent:hover {
@@ -10366,15 +10081,11 @@
   }
 
   .md-hover-tw-text-black:hover {
-    --text-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--text-opacity)) !important
+    color: #000 !important
   }
 
   .md-hover-tw-text-white:hover {
-    --text-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--text-opacity)) !important
+    color: #fff !important
   }
 
   .md-focus-tw-text-transparent:focus {
@@ -10386,75 +10097,11 @@
   }
 
   .md-focus-tw-text-black:focus {
-    --text-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--text-opacity)) !important
+    color: #000 !important
   }
 
   .md-focus-tw-text-white:focus {
-    --text-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--text-opacity)) !important
-  }
-
-  .md-tw-text-opacity-0 {
-    --text-opacity: 0 !important
-  }
-
-  .md-tw-text-opacity-25 {
-    --text-opacity: 0.25 !important
-  }
-
-  .md-tw-text-opacity-50 {
-    --text-opacity: 0.5 !important
-  }
-
-  .md-tw-text-opacity-75 {
-    --text-opacity: 0.75 !important
-  }
-
-  .md-tw-text-opacity-100 {
-    --text-opacity: 1 !important
-  }
-
-  .md-hover-tw-text-opacity-0:hover {
-    --text-opacity: 0 !important
-  }
-
-  .md-hover-tw-text-opacity-25:hover {
-    --text-opacity: 0.25 !important
-  }
-
-  .md-hover-tw-text-opacity-50:hover {
-    --text-opacity: 0.5 !important
-  }
-
-  .md-hover-tw-text-opacity-75:hover {
-    --text-opacity: 0.75 !important
-  }
-
-  .md-hover-tw-text-opacity-100:hover {
-    --text-opacity: 1 !important
-  }
-
-  .md-focus-tw-text-opacity-0:focus {
-    --text-opacity: 0 !important
-  }
-
-  .md-focus-tw-text-opacity-25:focus {
-    --text-opacity: 0.25 !important
-  }
-
-  .md-focus-tw-text-opacity-50:focus {
-    --text-opacity: 0.5 !important
-  }
-
-  .md-focus-tw-text-opacity-75:focus {
-    --text-opacity: 0.75 !important
-  }
-
-  .md-focus-tw-text-opacity-100:focus {
-    --text-opacity: 1 !important
+    color: #fff !important
   }
 
   .md-tw-italic {
@@ -10515,16 +10162,6 @@
 
   .md-focus-tw-no-underline:focus {
     text-decoration: none !important
-  }
-
-  .md-tw-antialiased {
-    -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: grayscale !important
-  }
-
-  .md-tw-subpixel-antialiased {
-    -webkit-font-smoothing: auto !important;
-    -moz-osx-font-smoothing: auto !important
   }
 
   .md-tw-ordinal, .md-tw-slashed-zero, .md-tw-lining-nums, .md-tw-oldstyle-nums, .md-tw-proportional-nums, .md-tw-tabular-nums, .md-tw-diagonal-fractions, .md-tw-stacked-fractions {
@@ -13064,45 +12701,6 @@
     outline-offset: 2px !important
   }
 
-  .lg-tw-overscroll-auto {
-    -ms-scroll-chaining: chained !important;
-        overscroll-behavior: auto !important
-  }
-
-  .lg-tw-overscroll-contain {
-    -ms-scroll-chaining: none !important;
-        overscroll-behavior: contain !important
-  }
-
-  .lg-tw-overscroll-none {
-    -ms-scroll-chaining: none !important;
-        overscroll-behavior: none !important
-  }
-
-  .lg-tw-overscroll-y-auto {
-    overscroll-behavior-y: auto !important
-  }
-
-  .lg-tw-overscroll-y-contain {
-    overscroll-behavior-y: contain !important
-  }
-
-  .lg-tw-overscroll-y-none {
-    overscroll-behavior-y: none !important
-  }
-
-  .lg-tw-overscroll-x-auto {
-    overscroll-behavior-x: auto !important
-  }
-
-  .lg-tw-overscroll-x-contain {
-    overscroll-behavior-x: contain !important
-  }
-
-  .lg-tw-overscroll-x-none {
-    overscroll-behavior-x: none !important
-  }
-
   .lg-tw-p-0 {
     padding: 0 !important
   }
@@ -13772,15 +13370,11 @@
   }
 
   .lg-tw-text-black {
-    --text-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--text-opacity)) !important
+    color: #000 !important
   }
 
   .lg-tw-text-white {
-    --text-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--text-opacity)) !important
+    color: #fff !important
   }
 
   .lg-hover-tw-text-transparent:hover {
@@ -13792,15 +13386,11 @@
   }
 
   .lg-hover-tw-text-black:hover {
-    --text-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--text-opacity)) !important
+    color: #000 !important
   }
 
   .lg-hover-tw-text-white:hover {
-    --text-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--text-opacity)) !important
+    color: #fff !important
   }
 
   .lg-focus-tw-text-transparent:focus {
@@ -13812,75 +13402,11 @@
   }
 
   .lg-focus-tw-text-black:focus {
-    --text-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--text-opacity)) !important
+    color: #000 !important
   }
 
   .lg-focus-tw-text-white:focus {
-    --text-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--text-opacity)) !important
-  }
-
-  .lg-tw-text-opacity-0 {
-    --text-opacity: 0 !important
-  }
-
-  .lg-tw-text-opacity-25 {
-    --text-opacity: 0.25 !important
-  }
-
-  .lg-tw-text-opacity-50 {
-    --text-opacity: 0.5 !important
-  }
-
-  .lg-tw-text-opacity-75 {
-    --text-opacity: 0.75 !important
-  }
-
-  .lg-tw-text-opacity-100 {
-    --text-opacity: 1 !important
-  }
-
-  .lg-hover-tw-text-opacity-0:hover {
-    --text-opacity: 0 !important
-  }
-
-  .lg-hover-tw-text-opacity-25:hover {
-    --text-opacity: 0.25 !important
-  }
-
-  .lg-hover-tw-text-opacity-50:hover {
-    --text-opacity: 0.5 !important
-  }
-
-  .lg-hover-tw-text-opacity-75:hover {
-    --text-opacity: 0.75 !important
-  }
-
-  .lg-hover-tw-text-opacity-100:hover {
-    --text-opacity: 1 !important
-  }
-
-  .lg-focus-tw-text-opacity-0:focus {
-    --text-opacity: 0 !important
-  }
-
-  .lg-focus-tw-text-opacity-25:focus {
-    --text-opacity: 0.25 !important
-  }
-
-  .lg-focus-tw-text-opacity-50:focus {
-    --text-opacity: 0.5 !important
-  }
-
-  .lg-focus-tw-text-opacity-75:focus {
-    --text-opacity: 0.75 !important
-  }
-
-  .lg-focus-tw-text-opacity-100:focus {
-    --text-opacity: 1 !important
+    color: #fff !important
   }
 
   .lg-tw-italic {
@@ -13941,16 +13467,6 @@
 
   .lg-focus-tw-no-underline:focus {
     text-decoration: none !important
-  }
-
-  .lg-tw-antialiased {
-    -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: grayscale !important
-  }
-
-  .lg-tw-subpixel-antialiased {
-    -webkit-font-smoothing: auto !important;
-    -moz-osx-font-smoothing: auto !important
   }
 
   .lg-tw-ordinal, .lg-tw-slashed-zero, .lg-tw-lining-nums, .lg-tw-oldstyle-nums, .lg-tw-proportional-nums, .lg-tw-tabular-nums, .lg-tw-diagonal-fractions, .lg-tw-stacked-fractions {
@@ -16490,45 +16006,6 @@
     outline-offset: 2px !important
   }
 
-  .xl-tw-overscroll-auto {
-    -ms-scroll-chaining: chained !important;
-        overscroll-behavior: auto !important
-  }
-
-  .xl-tw-overscroll-contain {
-    -ms-scroll-chaining: none !important;
-        overscroll-behavior: contain !important
-  }
-
-  .xl-tw-overscroll-none {
-    -ms-scroll-chaining: none !important;
-        overscroll-behavior: none !important
-  }
-
-  .xl-tw-overscroll-y-auto {
-    overscroll-behavior-y: auto !important
-  }
-
-  .xl-tw-overscroll-y-contain {
-    overscroll-behavior-y: contain !important
-  }
-
-  .xl-tw-overscroll-y-none {
-    overscroll-behavior-y: none !important
-  }
-
-  .xl-tw-overscroll-x-auto {
-    overscroll-behavior-x: auto !important
-  }
-
-  .xl-tw-overscroll-x-contain {
-    overscroll-behavior-x: contain !important
-  }
-
-  .xl-tw-overscroll-x-none {
-    overscroll-behavior-x: none !important
-  }
-
   .xl-tw-p-0 {
     padding: 0 !important
   }
@@ -17198,15 +16675,11 @@
   }
 
   .xl-tw-text-black {
-    --text-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--text-opacity)) !important
+    color: #000 !important
   }
 
   .xl-tw-text-white {
-    --text-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--text-opacity)) !important
+    color: #fff !important
   }
 
   .xl-hover-tw-text-transparent:hover {
@@ -17218,15 +16691,11 @@
   }
 
   .xl-hover-tw-text-black:hover {
-    --text-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--text-opacity)) !important
+    color: #000 !important
   }
 
   .xl-hover-tw-text-white:hover {
-    --text-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--text-opacity)) !important
+    color: #fff !important
   }
 
   .xl-focus-tw-text-transparent:focus {
@@ -17238,75 +16707,11 @@
   }
 
   .xl-focus-tw-text-black:focus {
-    --text-opacity: 1 !important;
-    color: #000 !important;
-    color: rgba(0, 0, 0, var(--text-opacity)) !important
+    color: #000 !important
   }
 
   .xl-focus-tw-text-white:focus {
-    --text-opacity: 1 !important;
-    color: #fff !important;
-    color: rgba(255, 255, 255, var(--text-opacity)) !important
-  }
-
-  .xl-tw-text-opacity-0 {
-    --text-opacity: 0 !important
-  }
-
-  .xl-tw-text-opacity-25 {
-    --text-opacity: 0.25 !important
-  }
-
-  .xl-tw-text-opacity-50 {
-    --text-opacity: 0.5 !important
-  }
-
-  .xl-tw-text-opacity-75 {
-    --text-opacity: 0.75 !important
-  }
-
-  .xl-tw-text-opacity-100 {
-    --text-opacity: 1 !important
-  }
-
-  .xl-hover-tw-text-opacity-0:hover {
-    --text-opacity: 0 !important
-  }
-
-  .xl-hover-tw-text-opacity-25:hover {
-    --text-opacity: 0.25 !important
-  }
-
-  .xl-hover-tw-text-opacity-50:hover {
-    --text-opacity: 0.5 !important
-  }
-
-  .xl-hover-tw-text-opacity-75:hover {
-    --text-opacity: 0.75 !important
-  }
-
-  .xl-hover-tw-text-opacity-100:hover {
-    --text-opacity: 1 !important
-  }
-
-  .xl-focus-tw-text-opacity-0:focus {
-    --text-opacity: 0 !important
-  }
-
-  .xl-focus-tw-text-opacity-25:focus {
-    --text-opacity: 0.25 !important
-  }
-
-  .xl-focus-tw-text-opacity-50:focus {
-    --text-opacity: 0.5 !important
-  }
-
-  .xl-focus-tw-text-opacity-75:focus {
-    --text-opacity: 0.75 !important
-  }
-
-  .xl-focus-tw-text-opacity-100:focus {
-    --text-opacity: 1 !important
+    color: #fff !important
   }
 
   .xl-tw-italic {
@@ -17367,16 +16772,6 @@
 
   .xl-focus-tw-no-underline:focus {
     text-decoration: none !important
-  }
-
-  .xl-tw-antialiased {
-    -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: grayscale !important
-  }
-
-  .xl-tw-subpixel-antialiased {
-    -webkit-font-smoothing: auto !important;
-    -moz-osx-font-smoothing: auto !important
   }
 
   .xl-tw-ordinal, .xl-tw-slashed-zero, .xl-tw-lining-nums, .xl-tw-oldstyle-nums, .xl-tw-proportional-nums, .xl-tw-tabular-nums, .xl-tw-diagonal-fractions, .xl-tw-stacked-fractions {

@@ -308,6 +308,9 @@ module.exports = {
     transitionDelay: false,
     animation: false,
     clear: false,
-    accessibility: false
+    accessibility: false,
+    textOpacity: false,
+    fontSmoothing: false,
+    overscrollBehavior: false
   },
 };
