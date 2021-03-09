@@ -13,7 +13,6 @@ export default class Accordion extends BaseControl {
         this.element = this.jQuery('#' + this.eleId);
         this.accordionSettings = this.settings || {};
         this.element.accordion(this.accordionSettings);
-        // this.$emit('addRef', this);
     }
     set(settings: { [key: string]: any }) {
         this.accordionSettings = settings || {};
