@@ -1,11 +1,11 @@
 import { Component } from 'vue-property-decorator';
 import { mapActions, mapGetters } from 'vuex';
-import { ChangeMessageFn } from '../store/action.interface';
+import { Object } from 'parse';
+import { ChangeMessageFn, FetchPostFn } from '../store/action.interface';
 import { Actions, Getters } from '../store/enums';
 import BaseComponent from '../components/BaseComponent';
 import Modal from '../components/controls/Modal';
 import Accordion from '../components/controls/Accordion';
-import { ParseBase } from '../utils/parse';
 
 @Component({
   components: {
@@ -13,29 +13,38 @@ import { ParseBase } from '../utils/parse';
     Accordion
   },
   methods: {
-    ...mapActions([Actions.changeMessage])
+    ...mapActions([
+      Actions.changeMessage,
+      Actions.fetchPost
+    ])
   },
   computed: {
-    ...mapGetters([Getters.message])
+    ...mapGetters([
+      Getters.message,
+      Getters.posts
+    ])
   }
 })
 export default class Contact extends BaseComponent {
   [Getters.message]!: string;
+  [Getters.posts]!: Array<Object>;
   [Actions.changeMessage]!: ChangeMessageFn;
+  [Actions.fetchPost]!: FetchPostFn;
   modal!: Modal;
 
-  async render() {
-    console.log(process.env);
-    const post = await ParseBase.runCloud('listPost', {
-      page: 1,
-      perPage: 10,
-      text: '12345'
-    });
-    console.log(post);
+  render() {
     return (
       <div>
         <div>{this.message} Contact Page</div>
         <button on-click={() => this.modal.show()}>open</button>
+        <button on-click={async () => {
+          this.showLoading();
+          await this.fetchPost({
+            page: 1,
+            perPage: 10
+          });
+          this.hideLoading();
+        }}>fetch post</button>
         <button on-click={async () => {
           this.showLoading();
           console.log('start:');
@@ -68,24 +77,25 @@ export default class Contact extends BaseComponent {
           }
         }}></Modal>
         <div class="tw-pt-2">
-          <Accordion className='styled fluid'>
-            {
-              [
-                'Hello',
-                'World'
-              ].map((item, index) => {
-                return [
-                  <div class="title" id={'case-title-' + index}>
-                    <i class="dropdown icon"></i>
-                    <span>{item}</span>
-                  </div>,
-                  <div class="content" id={'case-content-' + index}>
-                    Content {item}
-                  </div>
-                ];
-              })
-            }
-          </Accordion>
+          {
+            this.posts.length ?
+              <Accordion className='styled fluid'>
+                {
+                  this.posts.map(item => {
+                    return [
+                      <div class="title" id={'case-title-' + item.id}>
+                        <i class="dropdown icon"></i>
+                        <span>Post - {item.id}</span>
+                      </div>,
+                      <div class="content" id={'case-content-' + item.id}>
+                        {item.get('message')}
+                      </div>
+                    ];
+                  })
+                }
+              </Accordion>
+              : null
+          }
         </div>
       </div>
     );

@@ -1,8 +1,10 @@
 export enum Actions {
-    changeMessage = 'changeMessage',
-    fetchDataTest = 'fetchDataTest'
+  changeMessage = 'changeMessage',
+  fetchDataTest = 'fetchDataTest',
+  fetchPost = 'fetchPost'
 }
 
 export enum Getters {
-    message = 'message'
+  message = 'message',
+  posts = 'posts'
 }

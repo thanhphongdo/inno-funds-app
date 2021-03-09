@@ -10,7 +10,8 @@ Vue.use(Vuex);
 export default new Vuex.Store<RootStateInterface>({
   state: {
     baseUrl: 'http://localhost:3000/',
-    message: 'hello'
+    message: 'hello',
+    posts: []
   },
   getters: getters,
   mutations: mutations,
