@@ -1,26 +1,37 @@
 import { Component } from 'vue-property-decorator';
 import { mapActions, mapGetters } from 'vuex';
-import BaseComponent from '../components/BaseComponent';
 import { ChangeMessageFn } from '../store/action.interface';
+import { Actions, Getters } from '../store/enums';
+import BaseComponent from '../components/BaseComponent';
 import Modal from '../components/controls/Modal';
+import Accordion from '../components/controls/Accordion';
+import { ParseBase } from '../utils/parse';
 
 @Component({
   components: {
-    Modal
+    Modal,
+    Accordion
   },
   methods: {
-    ...mapActions(['changeMessage'])
+    ...mapActions([Actions.changeMessage])
   },
   computed: {
-    ...mapGetters(['message'])
+    ...mapGetters([Getters.message])
   }
 })
 export default class Contact extends BaseComponent {
-  message?: string;
+  [Getters.message]!: string;
+  [Actions.changeMessage]!: ChangeMessageFn;
   modal!: Modal;
-  changeMessage!: ChangeMessageFn;
 
-  render() {
+  async render() {
+    console.log(process.env);
+    const post = await ParseBase.runCloud('listPost', {
+      page: 1,
+      perPage: 10,
+      text: '12345'
+    });
+    console.log(post);
     return (
       <div>
         <div>{this.message} Contact Page</div>
@@ -56,6 +67,26 @@ export default class Contact extends BaseComponent {
             }
           }
         }}></Modal>
+        <div class="tw-pt-2">
+          <Accordion className='styled fluid'>
+            {
+              [
+                'Hello',
+                'World'
+              ].map((item, index) => {
+                return [
+                  <div class="title" id={'case-title-' + index}>
+                    <i class="dropdown icon"></i>
+                    <span>{item}</span>
+                  </div>,
+                  <div class="content" id={'case-content-' + index}>
+                    Content {item}
+                  </div>
+                ];
+              })
+            }
+          </Accordion>
+        </div>
       </div>
     );
   }

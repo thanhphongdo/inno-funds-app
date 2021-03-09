@@ -4,6 +4,9 @@ import router from './router';
 import store from './store';
 import "@/assets/jquery/jquery.js";
 import "@/assets/fomantic-ui/dist/semantic.min.js";
+import { ParseBase } from './utils/parse';
+
+ParseBase.init();
 
 Vue.config.productionTip = false;
 
