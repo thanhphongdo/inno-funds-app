@@ -29,7 +29,7 @@ export default class Contact extends Vue {
           await this.changeMessage(this.message + ' 1');
           console.log('changed');
         }}>change message</button>
-        <Modal on-addRef={(modal: Modal) => { this.modal = modal }} {...{
+        <Modal on-addRef={(modal: Modal) => { this.modal = modal }} settings={{ duration: 1000 }} {...{
           scopedSlots: {
             header: () => {
               return (
