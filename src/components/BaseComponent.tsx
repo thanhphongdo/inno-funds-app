@@ -4,6 +4,7 @@ export default class BaseComponent extends Vue {
     constructor() {
         super();
         this.filters = this.$options.filters;
+        this.$emit('addRef', this);
     }
     notify(obj: any) {
         obj.__ob__.dep.notify();

@@ -11,7 +11,7 @@ export default class Modal extends BaseControl {
     mounted() {
         this.element = this.jQuery('#' + this.eleId);
         this.modalSettings = this.settings || {};
-        this.$emit('addRef', this);
+        // this.$emit('addRef', this);
     }
     set(settings: { [key: string]: any }) {
         this.modalSettings = settings || {};
