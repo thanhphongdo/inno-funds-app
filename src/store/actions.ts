@@ -25,15 +25,16 @@ export const actions: ActionTree<RootStateInterface, RootStateInterface> = {
     });
   },
   async [Actions.fetchPost]({ commit, state }, { page, perPage }) {
-    const response = await ParseBase.runCloud<{
-      page: number,
-      perPage: number,
-      data: Array<Object>
-    }>('listPost', {
-      page: page,
-      perPage: perPage,
-      text: '12345'
-    });
-    commit(Actions.fetchPost, response.data);
+    const posts = [{
+      id: 1,
+      message: 'First Post',
+      views: 100
+    },
+    {
+      id: 2,
+      message: 'Second Post',
+      views: 200
+    }]
+    commit(Actions.fetchPost, posts);
   }
 }
