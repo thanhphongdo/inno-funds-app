@@ -1,16 +1,19 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 import BaseComponent from '../BaseComponent';
-declare var $: any;
 
 @Component
 export default class Modal extends BaseComponent {
     @Prop(String) readonly id?: string;
     @Prop(String) readonly className?: string;
     @Prop(Object) settings!: { [key: string]: any }
+    cmpSettings!: { [key: string]: any }
     eleId!: string;
-    jQuery: (seletor: string) => any = $;
     constructor() {
         super();
+    }
+
+    set(settings: { [key: string]: any }) {
+        this.cmpSettings = settings || {};
     }
 
     setControlId(controlName: string) {
