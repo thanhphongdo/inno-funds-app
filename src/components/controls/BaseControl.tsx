@@ -8,8 +8,14 @@ export default class Modal extends BaseComponent {
     @Prop(Object) settings!: { [key: string]: any }
     cmpSettings!: { [key: string]: any }
     eleId!: string;
+    element: any;
     constructor() {
         super();
+    }
+
+    mounted() {
+        this.element = this.jQuery('#' + this.eleId);
+        this.cmpSettings = this.settings || {};
     }
 
     set(settings: { [key: string]: any }) {

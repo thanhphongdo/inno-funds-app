@@ -3,14 +3,9 @@ import BaseControl from './BaseControl';
 @Component
 export default class Modal extends BaseControl {
     @Prop(String) readonly modalDialogClassName?: string;
-    element: any;
     constructor() {
         super();
         this.setControlId(this.constructor.name);
-    }
-    mounted() {
-        this.element = this.jQuery('#' + this.eleId);
-        this.cmpSettings = this.settings || {};
     }
     setOption(options: { [key: string]: string }) {
         this.element.modal(this.cmpSettings)
@@ -53,26 +48,6 @@ export default class Modal extends BaseControl {
                     </div>
                 </div>
             </div>
-            // <div>
-            //     <div id={this.eleId} class={'ui modal ' + (this.className || '')}>
-            //         <i class="close icon"></i>
-            //         <div class="header">
-            //             {
-            //                 (this.$scopedSlots as any).header ? (this.$scopedSlots as any).header() : null
-            //             }
-            //         </div>
-            //         <div class="content">
-            //             {
-            //                 (this.$scopedSlots as any).content ? (this.$scopedSlots as any).content() : null
-            //             }
-            //         </div>
-            //         <div class="actions">
-            //             {
-            //                 (this.$scopedSlots as any).actions ? (this.$scopedSlots as any).actions() : null
-            //             }
-            //         </div>
-            //     </div>
-            // </div>
         );
     }
 }
