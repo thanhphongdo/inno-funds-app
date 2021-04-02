@@ -2,7 +2,7 @@
 <div>
     <h1 class="mt-5">Home Page</h1>
     <div>
-        <div v-for="post in posts" :key="post.id">
+        <div v-for="(post, index) in posts" :key="index">
             {{ post.message }}
         </div>
     </div>
@@ -29,50 +29,7 @@
 </div>
 </template>
 
-<script lang="ts">
-import {
-    Component
-} from "vue-property-decorator";
-import BaseComponent from "@/components/BaseComponent";
-import Modal from "@/components/controls/Modal";
-import {
-    mapState,
-    mapActions,
-    mapGetters
-} from "vuex";
-import {
-    Getters,
-    Actions
-} from "@/store/enums";
-import {
-    FetchPostFn
-} from "@/store/action.interface";
-import {
-    Post
-} from "@/store/root_state.interface";
-@Component({
-    components: {
-        Modal,
-    },
-    computed: {
-        ...mapGetters([Getters.posts]),
-    },
-    methods: {
-        ...mapActions([Actions.fetchPost]),
-    },
-})
-export default class App extends BaseComponent {
-    modal!: Modal;
-    [Getters.posts] !: Array < Post > ;
-    [Actions.fetchPost] !: FetchPostFn;
-    mounted() {
-        this.fetchPost({
-            page: 1,
-            perPage: 10,
-        });
-    }
-}
-</script>
+<script lang="ts" src="./Home.ts"></script>
 
 <style lang="scss">
 </style>
